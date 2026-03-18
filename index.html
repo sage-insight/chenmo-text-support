@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sage Insight | Text-Only Emotional Support</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.7;color:#1f2937;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh}
+    .container{max-width:1040px;margin:0 auto;padding:24px}
+    .card{background:rgba(255,255,255,.96);border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.15);padding:36px;margin-bottom:24px}
+    header.card{text-align:center;padding:56px 28px;position:relative}
+    .lang-btn{position:absolute;top:18px;right:18px;border:none;background:#111827;color:#fff;padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:700}
+    .avatar{width:96px;height:96px;margin:0 auto 20px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;font-weight:700;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);box-shadow:0 6px 18px rgba(102,126,234,.35)}
+    h1{font-size:2.4rem;margin-bottom:12px;color:#111827}.subtitle{font-size:1.15rem;color:#4b5563;margin-bottom:14px}.tagline{font-size:1.2rem;font-weight:700;color:#5b5ce2}
+    h2{font-size:1.5rem;margin-bottom:16px;color:#111827;border-bottom:3px solid #667eea;padding-bottom:8px}
+    p{margin-bottom:14px}.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .item{background:linear-gradient(135deg,#f8fafc 0%,#eef2ff 100%);border-left:4px solid #667eea;border-radius:12px;padding:20px}
+    .item h3{margin-bottom:10px;color:#111827;font-size:1.08rem}.pricing-wrap{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .price-card{background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);border:1px solid #e5e7eb;border-radius:14px;padding:24px}.price-title{font-size:1.1rem;font-weight:700}.price{font-size:2rem;font-weight:800;color:#5b5ce2;margin:12px 0}.muted{color:#6b7280;font-size:.95rem}
+    .cta{display:inline-block;margin-top:14px;padding:14px 28px;border-radius:999px;text-decoration:none;color:#fff;font-weight:700;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);box-shadow:0 6px 18px rgba(102,126,234,.35)}
+    .notice{background:#fef3c7;color:#92400e;border-left:4px solid #f59e0b;padding:16px;border-radius:10px;margin-top:10px}
+    .contact-box{text-align:center;color:#fff;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
+    .email{display:inline-block;margin:18px 0;background:rgba(255,255,255,.96);color:#5b5ce2;font-weight:800;padding:14px 22px;border-radius:12px;font-size:1.15rem}
+    footer{text-align:center;color:rgba(255,255,255,.9);padding:18px}
+    @media(max-width:768px){h1{font-size:2rem}.card{padding:24px}header.card{padding:40px 20px}.lang-btn{top:12px;right:12px}}
+  </style>
+  <script src="i18n.js"></script>
+</head>
+<body data-title-zh="Sage Insight｜文字心理支持与情绪价值服务" data-title-en="Sage Insight | Text-Only Emotional Support">
+  <div class="container">
+    <header class="card">
+      <button id="langToggle" class="lang-btn" onclick="toggleSiteLang()">中文</button>
+      <div class="avatar">Sage<br/>Insight</div>
+      <h1>Sage Insight</h1>
+      <div class="subtitle" data-i18n data-i18n-zh="文字心理支持 · 情绪价值 · 关系问题梳理" data-i18n-en="Text-Only Emotional Support · Emotional Clarity · Relationship Guidance">Text-Only Emotional Support · Emotional Clarity · Relationship Guidance</div>
+      <div class="tagline" data-i18n data-i18n-zh="不视频，不语音，不见面。只用文字，帮你把混乱说清楚。" data-i18n-en="No calls, no video, no in-person meetings. Just clear written support when life feels messy.">No calls, no video, no in-person meetings. Just clear written support when life feels messy.</div>
+      <a class="cta" data-i18n data-i18n-zh="立即发邮件咨询" data-i18n-en="Email to Get Started" href="mailto:fcl2029@163.com?subject=I want text support service">Email to Get Started</a><br />
+      <a class="cta" href="start-here.html" data-i18n data-i18n-zh="不知道选哪项？从这里开始" data-i18n-en="Not sure what to choose? Start here">Not sure what to choose? Start here</a><br />
+      <a class="cta" href="order-now.html" data-i18n data-i18n-zh="直接复制模板下单" data-i18n-en="Copy a template and order now">Copy a template and order now</a><br />
+      <a class="cta" href="payment.html" data-i18n data-i18n-zh="查看付款与下单说明" data-i18n-en="View payment & order info">View payment & order info</a>
+    </header>
+
+    <section class="card">
+      <h2 data-i18n data-i18n-zh="我能帮你什么" data-i18n-en="How Sage Insight helps">How Sage Insight helps</h2>
+      <p data-i18n data-i18n-zh="这是一个提供纯文字支持的数字服务，适合那些不想暴露身份、不想上语音或视频、但又真的需要有人帮自己把问题理清的人。" data-i18n-en="This is a text-first digital support service for people who want privacy, do not want calls, and need help sorting through emotional or relationship chaos.">This is a text-first digital support service for people who want privacy, do not want calls, and need help sorting through emotional or relationship chaos.</p>
+      <div class="grid">
+        <div class="item"><h3 data-i18n data-i18n-zh="情绪梳理" data-i18n-en="Emotional Clarity">Emotional Clarity</h3><p data-i18n data-i18n-zh="适合情绪低落、内耗、分手后反复拉扯、脑子停不下来的时候。" data-i18n-en="For overwhelm, rumination, breakups, and nights when your mind will not stop.">For overwhelm, rumination, breakups, and nights when your mind will not stop.</p></div>
+        <div class="item"><h3 data-i18n data-i18n-zh="关系分析" data-i18n-en="Relationship Guidance">Relationship Guidance</h3><p data-i18n data-i18n-zh="适合暧昧、冷战、分手、复合纠结、表达困难。" data-i18n-en="For mixed signals, cold distance, breakups, reconciliation confusion, and hard conversations.">For mixed signals, cold distance, breakups, reconciliation confusion, and hard conversations.</p></div>
+        <div class="item"><h3 data-i18n data-i18n-zh="沟通脚本" data-i18n-en="Message Drafting">Message Drafting</h3><p data-i18n data-i18n-zh="把“我不知道怎么说”变成可直接发出去的话。" data-i18n-en="Turn “I don’t know what to say” into words you can actually send.">Turn “I don’t know what to say” into words you can actually send.</p></div>
+        <div class="item"><h3 data-i18n data-i18n-zh="陪伴式支持" data-i18n-en="Ongoing Written Support">Ongoing Written Support</h3><p data-i18n data-i18n-zh="不是一次性建议，而是在几天到两周里持续接住你。" data-i18n-en="Not just one reply — steady written support across several days or weeks.">Not just one reply — steady written support across several days or weeks.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n data-i18n-zh="最常见的 5 类求助场景" data-i18n-en="5 common reasons people come here">5 common reasons people come here</h2>
+      <div class="grid">
+        <div class="item"><h3 data-i18n data-i18n-zh="分手后反复想联系前任" data-i18n-en="You keep wanting to text your ex">You keep wanting to text your ex</h3><p data-i18n data-i18n-zh="适合：$39 / $99" data-i18n-en="Best fit: $39 / $99">Best fit: $39 / $99</p></div>
+        <div class="item"><h3 data-i18n data-i18n-zh="关系拉扯 / 冷战 / 不知道怎么回复" data-i18n-en="Mixed signals, distance, or no idea how to reply">Mixed signals, distance, or no idea how to reply</h3><p data-i18n data-i18n-zh="适合：$39 / $99" data-i18n-en="Best fit: $39 / $99">Best fit: $39 / $99</p></div>
+        <div class="item"><h3 data-i18n data-i18n-zh="情绪崩溃 / 内耗停不下来" data-i18n-en="Overthinking and emotional overload">Overthinking and emotional overload</h3><p data-i18n data-i18n-zh="适合：$19 / $99" data-i18n-en="Best fit: $19 / $99">Best fit: $19 / $99</p></div>
+        <div class="item"><h3 data-i18n data-i18n-zh="婚姻/长期关系中的自责与修复" data-i18n-en="Repair after hurting someone you love">Repair after hurting someone you love</h3><p data-i18n data-i18n-zh="适合：$99 / $249" data-i18n-en="Best fit: $99 / $249">Best fit: $99 / $249</p></div>
+        <div class="item"><h3 data-i18n data-i18n-zh="职业 burnout / 决策卡住" data-i18n-en="Burnout and decision paralysis">Burnout and decision paralysis</h3><p data-i18n data-i18n-zh="适合：$19 / $99 / $249" data-i18n-en="Best fit: $19 / $99 / $249">Best fit: $19 / $99 / $249</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n data-i18n-zh="服务包与报价" data-i18n-en="Offers & pricing">Offers & pricing</h2>
+      <div class="pricing-wrap">
+        <div class="price-card"><div class="price-title" data-i18n data-i18n-zh="快速情绪梳理" data-i18n-en="Quick emotional clarity">Quick emotional clarity</div><div class="price">$19</div></div>
+        <div class="price-card"><div class="price-title" data-i18n data-i18n-zh="关系问题快诊" data-i18n-en="Relationship quick diagnosis">Relationship quick diagnosis</div><div class="price">$39</div></div>
+        <div class="price-card"><div class="price-title" data-i18n data-i18n-zh="单次深度文字支持" data-i18n-en="Deep one-time written support">Deep one-time written support</div><div class="price">$99</div></div>
+        <div class="price-card"><div class="price-title" data-i18n data-i18n-zh="3天陪伴支持" data-i18n-en="3-day written support">3-day written support</div><div class="price">$249</div></div>
+        <div class="price-card"><div class="price-title" data-i18n data-i18n-zh="7天关系/情绪支持包" data-i18n-en="7-day relationship / emotional support">7-day relationship / emotional support</div><div class="price">$599</div></div>
+        <div class="price-card"><div class="price-title" data-i18n data-i18n-zh="14天高强度支持包" data-i18n-en="14-day intensive support">14-day intensive support</div><div class="price">$1499</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n data-i18n-zh="服务说明" data-i18n-en="Important notes">Important notes</h2>
+      <p data-i18n data-i18n-zh="全部通过文字完成，不提供视频、语音、见面，也不替代医疗或危机干预。" data-i18n-en="Everything is delivered in writing. No calls, no video, no in-person sessions, and not a substitute for medical or crisis care.">Everything is delivered in writing. No calls, no video, no in-person sessions, and not a substitute for medical or crisis care.</p>
+      <div class="notice" data-i18n data-i18n-zh="如果你需要的是私密、安全、低暴露的支持，这种形式通常会更适合你。" data-i18n-en="If you want privacy, low exposure, and written clarity you can reread later, this format is often a strong fit.">If you want privacy, low exposure, and written clarity you can reread later, this format is often a strong fit.</div>
+    </section>
+
+    <section class="card contact-box">
+      <h2 data-i18n data-i18n-zh="联系 Sage Insight" data-i18n-en="Contact Sage Insight">Contact Sage Insight</h2>
+      <p data-i18n data-i18n-zh="如果你愿意，可以直接发邮件，简单写下你现在最困扰的问题。" data-i18n-en="You can email directly and briefly describe what is weighing on you most right now.">You can email directly and briefly describe what is weighing on you most right now.</p>
+      <div class="email">fcl2029@163.com</div>
+      <p data-i18n data-i18n-zh="建议标题：我想咨询文字支持服务" data-i18n-en="Suggested subject: I want text support service">Suggested subject: I want text support service</p>
+      <a class="cta" href="mailto:fcl2029@163.com?subject=I want text support service" data-i18n data-i18n-zh="立即开始" data-i18n-en="Start now">Start now</a>
+    </section>
+
+    <footer>Sage Insight · Text-Only Digital Support</footer>
+  </div>
+</body>
+</html>
